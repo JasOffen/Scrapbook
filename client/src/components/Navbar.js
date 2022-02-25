@@ -7,7 +7,7 @@ const Navbar = () => {
 
             <div class="nav-overlay uk-navbar-left">
 
-                <a class="uk-navbar-item uk-logo" href="#">Scrapbook</a>
+                <a class="uk-navbar-item uk-logo" href="./">Scrapbook</a>
 
             </div>
 

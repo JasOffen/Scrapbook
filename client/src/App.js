@@ -8,6 +8,7 @@ import {
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { setContext } from '@apollo/client/link/context';
 import Navbar from './components/Navbar'
+import Signin from './pages/signin'
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -36,7 +37,7 @@ function App() {
       <Navbar />
         <Routes>
           <Route exact path='/'/>
-          <Route exact path='/saved' />
+          <Route exact path='/signin' element = {<Signin/>}/>
           <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
         </Routes>
     </Router>
